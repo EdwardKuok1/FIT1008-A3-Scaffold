@@ -64,3 +64,9 @@ class Land:
 
     def set_guardians(self, new_guardians: int) -> None:
         self.guardians = new_guardians
+    
+    def __lt__(self, other) -> bool:
+        return True
+    
+    def __le__(self, other) -> bool:
+        return True
